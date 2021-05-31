@@ -1,0 +1,49 @@
+.home-container {
+	padding: 45px 12px;
+}
+
+.banner-area {
+  text-align: center;
+  * {
+    margin-bottom: 25px;
+    display: inline-block;
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase;
+    width: 90%;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    width: 90%;
+  }
+}
+
+.home-button {
+	color: white;
+	background: #f47070;
+	border: none;
+	border-radius: 5px;
+	border-bottom: 4px solid #C25858;
+	padding: 17px 22px;
+  font-weight: 700;
+  &:focus {
+    outline: none;
+  }
+  :hover {
+    margin-top: 2px;
+    border-bottom: 2px solid #C25858;
+  }
+}

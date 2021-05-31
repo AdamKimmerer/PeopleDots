@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fafafa;
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1b180a;
+  overflow: hidden;
+  &.no-overscroll {
+    overscroll-behavior: none;
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+#testID, canvas {
+  position: fixed;
+  top: 0;
+  left: -9999px
+}
+
+#testID, canvas, #testID * {
+  -webkit-transform: translate3d(0,0,0);
+}

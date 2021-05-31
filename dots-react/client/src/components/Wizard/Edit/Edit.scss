@@ -1,0 +1,140 @@
+#mobile-container {
+  background: #332E2E;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  min-height: -webkit-fill-available;
+}
+
+#inner-container {
+  background: #332e2e;
+  flex: 1 1 auto;
+  overflow: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  img {
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.circle-inner {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  &.active {
+    border: 5px solid #fff;
+  }
+  &.yellow {
+    background: #e4c924 !important;
+  }
+  &.blue {
+    background: #06b7f1 !important;
+  }
+  &.aqua {
+    background: #02ba96 !important;
+  }
+  &.navy {
+    background: #334462 !important;
+  }
+  &.orange {
+    background: #eb5e30 !important;
+  }
+  &.red {
+    background: #c93d3d !important;
+  }
+  &.purple {
+    background: #ab3dbd !important;
+  }
+  &.green {
+    background: #3f9715 !important;
+  }
+}
+
+#controls-container {
+  width: 100%;
+  min-height: 143px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 143px;
+}
+
+#controls-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0 7%;
+  div {
+    font-size: 24px;
+    height: 43px;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+  }
+}
+
+#controls-container-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding: 0 20px;
+  border-left: 1px solid #ccc;
+}
+
+.circle {
+  width: 25%;
+  padding: 5px 0;
+  text-align: center;
+  position: relative;
+  div {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  #yellow {
+    background: #e4c924;
+  }
+  #blue {
+    background: #06b7f1;
+  }
+  #aqua {
+    background: #02ba96;
+  }
+  #navy {
+    background: #334462;
+  }
+  #orange {
+    background: #eb5e30;
+  }
+  #red {
+    background: #c93d3d;
+  }
+  #purple {
+    background: #ab3dbd;
+  }
+  #green {
+    background: #3f9715;
+  }
+}
+
+// #testID {
+//   position: fixed;
+//   top: 0;
+//   left: -9999px;
+// }
