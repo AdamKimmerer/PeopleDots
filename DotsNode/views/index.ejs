@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include("partials/head.ejs") %>
+  </head>
+  <body>
+    <div class="banner-area">
+      <h1>Those People That <br>Put Donts on Faces</h1>
+      <h2>"If you can't see their face, you're going to look at how they're dressed, maybe their stance, their surroundings... You really do see that handshake. You know, it's not about those guys, it's about that handshake."</h2>
+      <img src="images/Banner.png"/>
+      <p>Ut et cursus aliquam tincidunt et mi est. Tincidunt sit lacus at fermentum porta suscipit. Tempus ultrices nisl, nullam molestie. Id rhoncus magnis eu et et nisl et. Lectus posuere egestas elit ultrices auctor erat maecenas proin eu.</p>
+      <a href="/wizard">
+        <button>Put dots on things</button>
+      </a>
+    </div>
+    <ul>
+      <% tweets.forEach(function(tweet){%>
+        <li><%- tweet %></li>
+      <% }); %> 
+    </ul>
+  </body>
+</html>

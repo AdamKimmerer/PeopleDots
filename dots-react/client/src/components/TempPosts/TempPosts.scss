@@ -1,0 +1,86 @@
+.tweetList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tweetList li {
+	width: 100%;
+	padding: 15px;
+	background: #fff;
+	border-radius: 15px;
+	border: 1px solid #CCD6DD;
+	margin-top: 14px;
+	font-family: 'Helvetica Neue', system-ui;
+	font-weight: 400;
+	color: #14171A;
+}
+
+.profile {
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.profile .profile-image {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+.profile .profile-image img {
+	width: 100%;
+}
+
+.profile .profile-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 15px;
+}
+
+.profile .profile-text .profile-text-name {
+	font-weight: 700;
+}
+
+.profile .profile-text .profile-text-user {
+	color: #657786;
+}
+
+.caption {
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.media {
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.media img {
+	width: 100%;
+	display: inline-block;
+}
+
+.date {
+	font-size: 12px;
+	color: #657786;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCD6DD;
+	margin-bottom: 10px;
+}
+
+.likes {
+	padding-top: 5px;
+	color: #657786;
+	font-size: 12px;
+}
+
+.likes span:first-child {
+	margin-right: 30px;
+}

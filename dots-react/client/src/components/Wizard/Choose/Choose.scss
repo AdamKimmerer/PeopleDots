@@ -1,0 +1,52 @@
+.photo-container {
+    padding: 0 10px;
+    overflow: scroll;
+    height: 100%;
+}
+
+.photo-search input {
+    border-radius: 0px;
+    border: none;
+    border: 1px solid #666;
+    width: 98%;
+    padding: 10px 15px;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+  
+.grid-col {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.grid-item {
+    text-align: center;
+    margin-bottom: 4px;
+    width: 100%;
+    img {
+        display: inline-block;
+        width: 95%;
+        &.active {
+            outline: 5px solid #E4C924;
+        }
+    }
+}
+
+.upload-test {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 130px;
+    background: blue;
+}
