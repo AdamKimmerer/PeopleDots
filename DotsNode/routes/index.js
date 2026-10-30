@@ -6,9 +6,9 @@ router.get('/', function(req, res, next) {
   var Twitter = require('twitter');
 
   var client = new Twitter({
-    consumer_key: "***REMOVED***",
-    consumer_secret: "***REMOVED***",
-    bearer_token: "***REMOVED***"
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    bearer_token: process.env.TWITTER_BEARER_TOKEN
   });
 
   var tweetEmbeds = [];
